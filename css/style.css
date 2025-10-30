@@ -1,0 +1,54 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #007bff, #6610f2);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: #fff !important;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+}
+
+/* Converter Area */
+textarea {
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid #007bff;
+}
+
+button {
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, #007bff, #6610f2);
+}
+
+.footer-links a {
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
