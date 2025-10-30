@@ -1,84 +1,129 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Free KrutiDev to Unicode and Unicode to KrutiDev Hindi Font Converter Tool Online. Convert Hindi fonts instantly.">
-  <title>Hindi Font Converter - KrutiDev to Unicode</title>
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <title>Font converter, C गाँधी / चाणक्य / कृतिदेव – शब्द क्षेत्र (4CGandhi / Chanakya / Kruti Dev – Text Area), यूनीकोड शब्द क्षेत्र (Unicode Text Area)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="title" content="Font Converter">
+    <meta name="description" content="Font converter, C गाँधी / चाणक्य / कृतिदेव – शब्द क्षेत्र (4CGandhi / Chanakya / Kruti Dev – Text Area), यूनीकोड शब्द क्षेत्र (Unicode Text Area)">
+    <meta name="keywords" content="4c Gandhi to Unicode, Chanakya to Unicode, Kruti Dev to Unicode, Unicode to 4C Gandhi, Unicode to Chanakya, Unicode to Kruti Dev">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="koffeewithkode.com">
 
-  <!-- 🌐 Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Hindi Font Converter</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="#converter">Converter</a></li>
-        </ul>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
+  </head>
+  <body class="bg-info">
+
+    <!-- 🌐 Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Hindi Font Converter</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#converter">Converter</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id="converter">
+      <div class="header clearfix">
+        <h3 class="text-center"><img src="images/logo.png"  alt="Logo"></h3>
+      </div> 
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+              <span class="text-bold">4C&nbsp;गाँधी&nbsp;/&nbsp;चाणक्य&nbsp;/&nbsp;कृतिदेव&nbsp;&#8211;&nbsp;शब्द&nbsp;क्षेत्र (4CGandhi / Chanakya / Kruti Dev &#8211; Text Area)</span class="text-bold">
+                <div class="form-group margin-top10">
+                  <textarea id="legacy_text" class="form-control" cols="90" name="TextToConvert" rows="8"></textarea>
+                </div>
+                <div class="pull-left">
+                    <div class="text-center">
+                        <button href="javascript:void(0);" id="g2u" name="converter" class="btn btn-default">4c Gandhi to Unicode <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
+                        <button href="javascript:void(0);" id="c2u" name="converter" class="btn btn-default">Chanakya to Unicode  <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
+                        <button href="javascript:void(0);" id="k2u" name="converter" class="btn btn-default">Kruti Dev to Unicode  <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
+                    </div>
+                </div> 
+          </div>
+          <div class="col-xs-12 col-md-6">
+              <b>यूनीकोड&nbsp;शब्द&nbsp;क्षेत्र (Unicode Text Area)</b>
+               
+              <div class="form-group margin-top10">
+                <textarea id="unicode_text" class="form-control"  cols="90" name="ConvertedText" rows="8"></textarea>
+              </div>
+              <div class="pull-left">
+                <div class="text-center">
+                    <button href="javascript:void(0);" id="u2g" name="converter" class="btn btn-default"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Unicode to 4C Gandhi</button>
+                    <button href="javascript:void(0);" id="u2c" name="converter" class="btn btn-default"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Unicode to Chanakya</button>
+                    <button href="javascript:void(0);" id="u2k" name="converter" class="btn btn-default"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Unicode to Kruti Dev</button>
+                </div>
+              </div> 
+          </div>
       </div>
     </div>
-  </nav>
 
-  <!-- 🏠 Homepage Content -->
-  <section class="hero text-center py-5">
-    <div class="container">
-      <h1 class="display-5 fw-bold mb-3">Free Hindi Font Converter</h1>
-      <p class="lead mb-4">Convert <strong>KrutiDev to Unicode</strong> or <strong>Unicode to KrutiDev</strong> easily. This online Hindi font converter helps you use Hindi text anywhere on web and documents.</p>
-      <a href="#converter" class="btn btn-lg btn-light shadow-sm">Start Converting</a>
-    </div>
-  </section>
-
-  <!-- ⚙️ Converter Section -->
-  <section id="converter" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-3">Hindi Font Converter Tool</h2>
-      <p>Paste your Hindi text below and choose conversion type:</p>
-      <textarea class="form-control mb-3" rows="5" placeholder="यहां KrutiDev या Unicode टेक्स्ट पेस्ट करें..."></textarea>
-      <div class="d-flex justify-content-center gap-3">
-        <button class="btn btn-primary px-4">KrutiDev ➜ Unicode</button>
-        <button class="btn btn-outline-primary px-4">Unicode ➜ KrutiDev</button>
+    <!-- 📜 Footer -->
+    <footer class="footer bg-primary text-white mt-5 py-3">
+      <div class="container text-center">
+        <div class="mb-2">
+          <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+          <a href="#" class="text-white text-decoration-none me-3">Terms of Use</a>
+          <a href="#" class="text-white text-decoration-none">Disclaimer</a>
+        </div>
+        <div class="powerd-by">Powered by <a rel="noopener noreferrer" href="http://www.koffeewithkode.com/" target="_blank" class="text-white text-decoration-underline">Koffeewithkode.com</a></div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ℹ️ About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="fw-bold mb-3 text-center">About This Tool</h2>
-      <p>Hindi Font Converter is a free online tool built to help writers, journalists, and designers easily convert Hindi text between KrutiDev and Unicode fonts. No installation needed — 100% browser-based and instant.</p>
-    </div>
-  </section>
-
-  <!-- 📞 Contact Section -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-3">Contact Us</h2>
-      <p>For support or feedback, please email: <strong>support@hindifontconverter.in</strong></p>
-    </div>
-  </section>
-
-  <!-- ⚓ Footer -->
-  <footer class="footer bg-primary text-white py-4">
-    <div class="container text-center">
-      <p class="mb-2">© 2025 Hindi Font Converter. All Rights Reserved.</p>
-      <div class="footer-links">
-        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
-        <a href="#" class="text-white text-decoration-none me-3">Terms of Use</a>
-        <a href="#" class="text-white text-decoration-none">Disclaimer</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap/bootstrap.min.js"></script>
-</body>
+  </body>
+   
 </html>
+
+<script type="text/javascript" src="js/kd.js"></script>
+<script type="text/javascript" src="js/ch.js"></script>
+<script type="text/javascript" src="js/gndhi.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $('#g2u').click(function(){
+      convert_gandhi_to_unicode();
+      return;
+    })
+
+    $('#c2u').click(function(){
+      convert_chanakya_to_unicode();
+      return;
+    })
+
+    $('#k2u').click(function(){
+      convert_kruti_to_unicode();
+      return;
+    })
+
+
+    $('#u2g').click(function(){
+      Convert_to_4CGandhi();
+      return;
+    })
+
+    $('#u2c').click(function(){
+      Convert_Unicode_to_Chanakya();
+      return;
+    })
+
+    $('#u2k').click(function(){
+      Convert_to_Kritidev_010();
+      return;
+    })
+  });
+</script>
